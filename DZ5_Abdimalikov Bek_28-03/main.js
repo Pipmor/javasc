@@ -10,7 +10,7 @@ oddNumbers.forEach((number) => {
 
 
 //2-ое задание
-function customFilterBooks(...books) {
+function customBooks(...books) {
     const booksWithU = [];
     const otherBooks = [];
 
@@ -27,7 +27,7 @@ function customFilterBooks(...books) {
 
 const allBooks = ['Путешествие к центру Земли','Гарри Поттер и Философский камень','Зов Ктулху','Мастер и Маргарита','Мертвые души', 'Маленький принц','Убик','Хроники Нарнии',];
 
-const filteredBooks = customFilterBooks(...allBooks);
+const filteredBooks = customBooks(...allBooks);
 
 console.log('Книги с буквой "у" в названии:', filteredBooks.booksWithU);
 console.log('Книги без буквы "у" в названии:', filteredBooks.otherBooks);
