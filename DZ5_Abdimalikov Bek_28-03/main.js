@@ -22,8 +22,12 @@ function customFilterBooks(...books) {
         }
     }
 
-    console.log('Книги с буквой "у" или "Y":', booksWithU);
-    console.log('Остальные книги:', otherBooks);
+    return { booksWithU, otherBooks };
 }
 
-customFilterBooks('Путешествие к центру Земли', 'Гарри Поттер и Философский камень', 'Зов Ктулху', 'Мастер и Маргарита', 'Мертвые души', 'Маленький принц', 'Убик', 'Хроники Нарнии',);
+const allBooks = ['Путешествие к центру Земли','Гарри Поттер и Философский камень','Зов Ктулху','Мастер и Маргарита','Мертвые души', 'Маленький принц','Убик','Хроники Нарнии',];
+
+const filteredBooks = customFilterBooks(...allBooks);
+
+console.log('Книги с буквой "у" в названии:', filteredBooks.booksWithU);
+console.log('Книги без буквы "у" в названии:', filteredBooks.otherBooks);
