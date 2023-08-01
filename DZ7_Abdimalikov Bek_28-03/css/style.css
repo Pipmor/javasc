@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.riddles {
+    margin-top: 20px;
+}
+
+.riddle {
+    margin-bottom: 15px;
+}
+
+.toggle-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.toggle-btn.active {
+    background-color: #dc3545;
+}
